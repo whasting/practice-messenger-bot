@@ -1,9 +1,9 @@
 class BotController < ApplicationController
   def webhook
-    if params[‘hub.verify_token’] == "mysecretverifytoken"
-     render text: params[‘hub.challenge’] and return
+    if params['hub.verify_token'] == "mysecretverifytoken"
+     render text: params['hub.challenge']
    else
-     render text: ‘error’ and return
+     render text: 'error'
    end
   end
 end
