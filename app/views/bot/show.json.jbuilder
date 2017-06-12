@@ -1,1 +1,1 @@
-@message
+json.extract! @message
