@@ -1,5 +1,6 @@
 class BotController < ApplicationController
   def show
-    render 'bot/show'
+    return 1234
+    # render 'bot/show'
   end
 end
