@@ -9,8 +9,9 @@ class BotController < ApplicationController
 
   def receive_message
     if params[:entry]
-      message = params['entry'].first['messaging']['message']['text']
-      render text: "Your message was: #{message}"
+      render text: params[:entry]
+      # message = params['entry'].first['messaging']['message']['text']
+      # render text: "Your message was: #{message}"
     end
   end
 end
