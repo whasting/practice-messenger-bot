@@ -43,6 +43,15 @@ group :development, :test do
   gem 'annotate'
 end
 
+group :test do
+  gem 'capybara'
+  gem 'rspec-rails'
+  gem 'shoulda-matchers'
+  gem 'launchy'
+  gem 'faker'
+  gem 'factory_girl_rails', require: false
+end
+
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> anywhere in the code.
   gem 'web-console', '>= 3.3.0'
