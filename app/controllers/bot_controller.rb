@@ -24,23 +24,33 @@ class BotController < ApplicationController
   end
 
   def send_message(sender_id, message)
+    # TODO: Add different response types, i.e. buttons
+    # body = {
+    #   recipient: {
+    #     id: sender_id
+    #   },
+    #   message: {
+    #     attachment: {
+    #       type: "template",
+    #       payload: {
+    #         template_type: "button",
+    #         text: message,
+    #         buttons: [{
+    #           type: "postback",
+    #           title: "Start Chatting",
+    #           payload: "USER_DEFINED_PAYLOAD"
+    #         }]
+    #       }
+    #     }
+    #   }
+    # }.to_json
+
     body = {
       recipient: {
         id: sender_id
       },
       message: {
-        attachment: {
-          type: "template",
-          payload: {
-            template_type: "button",
-            text: message,
-            buttons: [{
-              type: "postback",
-              title: "Start Chatting",
-              payload: "USER_DEFINED_PAYLOAD"
-            }]
-          }
-        }
+        text: message
       }
     }.to_json
 

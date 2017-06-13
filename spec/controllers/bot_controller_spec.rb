@@ -33,7 +33,18 @@ RSpec.describe BotController, type: :controller do
     end
   end
 
-  describe "POST # receive_message" do
+  describe "# receive_message" do
+    # TODO:
+    # Test message receipt
+  end
 
+  describe "POST # send_message" do
+    # TODO:
+    # Test sending messages
+  end
+
+  describe "BotHelper" do
+    # TODO:
+    # test each response generator method
   end
 end

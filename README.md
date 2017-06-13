@@ -1,24 +1,23 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+#### Basic functionality not implemented
 
-Things you may want to cover:
+- More tests need to be written
+- Was not able to test my implementation of the greeting message
 
-* Ruby version
+#### Bonus functionality implemented.
 
-* System dependencies
+- A basic help menu using keyword 'help'
+- Message parsing with Regex rather than string manipulation
 
-* Configuration
+#### Additional tests to write
 
-* Database creation
+- The send and receive message methods within bot controller
+- All the methods within the bot helper file
 
-* Database initialization
+#### Interesting and noteworthy choices you made, including external libraries/APIs
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+- HTTParty ruby gem - simplifies HTTP requests to Facebook
+- Annotate ruby gem - automatically comments the appropriate schema for each model
+- Shoulda-matchers ruby gem - allows model and controller tests to be written more efficiently
+- Implemented a Todo List table, which sets the app up to extend to having multiple todo lists

@@ -10,12 +10,10 @@
 #
 
 class TodoList < ApplicationRecord
-  validates :user_id, null: false
+  validates :user_id, presence: true
 
   has_many :todo_list_items
   belongs_to :user
-
-  before_save :default_name
 
   def default_name
     unless self.name
