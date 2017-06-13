@@ -1,17 +1,20 @@
 # == Schema Information
 #
-# Table name: users
+# Table name: todo_lists
 #
 #  id         :integer          not null, primary key
+#  user_id    :integer          not null
+#  name       :string
 #  created_at :datetime         not null
 #  updated_at :datetime         not null
-#  username   :string
 #
 
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  username: MyString
+  user_id: 
+  name: MyString
 
 two:
-  username: MyString
+  user_id: 
+  name: MyString

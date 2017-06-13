@@ -1,0 +1,20 @@
+# == Schema Information
+#
+# Table name: todo_list_items
+#
+#  id           :integer          not null, primary key
+#  todo_list_id :integer          not null
+#  body         :text             not null
+#  created_at   :datetime         not null
+#  updated_at   :datetime         not null
+#
+
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  todo_list_id: 1
+  body: MyText
+
+two:
+  todo_list_id: 1
+  body: MyText

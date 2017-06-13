@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170613195316) do
+ActiveRecord::Schema.define(version: 20170613204312) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -32,11 +32,26 @@ ActiveRecord::Schema.define(version: 20170613195316) do
     t.index ["user_id"], name: "index_messages_on_user_id", unique: true, using: :btree
   end
 
-  create_table "users", force: :cascade do |t|
-    t.string   "username",   null: false
+  create_table "todo_list_items", force: :cascade do |t|
+    t.integer  "todo_list_id", null: false
+    t.text     "body",         null: false
+    t.datetime "created_at",   null: false
+    t.datetime "updated_at",   null: false
+    t.index ["todo_list_id"], name: "index_todo_list_items_on_todo_list_id", using: :btree
+  end
+
+  create_table "todo_lists", force: :cascade do |t|
+    t.bigint   "user_id",    null: false
+    t.string   "name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["username"], name: "index_users_on_username", using: :btree
+    t.index ["user_id"], name: "index_todo_lists_on_user_id", using: :btree
+  end
+
+  create_table "users", id: :bigserial, force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.string   "username"
   end
 
 end
