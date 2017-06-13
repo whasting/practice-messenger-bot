@@ -7,6 +7,7 @@
 #  body         :text             not null
 #  created_at   :datetime         not null
 #  updated_at   :datetime         not null
+#  complete     :boolean          default("false")
 #
 
 require 'test_helper'
