@@ -14,6 +14,7 @@
 
 - The send and receive message methods within bot controller
 - All the methods within the bot helper file
+- Integration and E2E tests
 
 #### Interesting and noteworthy choices you made, including external libraries/APIs
 
