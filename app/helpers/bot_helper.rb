@@ -26,7 +26,7 @@ module BotHelper
       response = list_completed_todo_items(user_id)
 
     elsif command == "help"
-      response += "Available commands:\n"
+      response = "Available commands:\n"
       response += "LIST\nADD clean room\n#1 DONE\nCOMPLETE\n"
 
     else
