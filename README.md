@@ -22,3 +22,4 @@
 - Annotate ruby gem - automatically comments the appropriate schema for each model
 - Shoulda-matchers ruby gem - allows model and controller tests to be written more efficiently
 - Implemented a Todo List table, which sets the app up to extend to having multiple todo lists
+- A message table to implement future message analysis
